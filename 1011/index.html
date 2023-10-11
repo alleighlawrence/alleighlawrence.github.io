@@ -1,29 +1,102 @@
 <html>
 <head>
     <title> MIS3033 October 11 Alleigh Lawrence </title>
+
+    <style>
+        #maindiv {
+            background-color: aliceblue;
+            width: 800px;
+            height: 500px;
+            margin-top:50px;
+            display: flex; /*syntax to change the default layout*/
+            flex-direction: row; /*main direction*/
+            justify-content: flex-end; /*changes layout of content along main direction*/
+            align-items: flex-end; /*changes layout of content in cross direction*/
+        }
+
+        .d1 {
+            width: 100px;
+            height: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: lightseagreen;
+        }
+
+        #webdiv {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #bodydiv 
+        {
+            display:flex;
+            flex-direction:row;
+        }
+        #leftdiv
+        {
+            background-color:lightgreen;
+            width:480px;
+        }
+        #rightdiv 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            border: solid;
+            border-color: darkgrey;
+            border-width: 2px;
+            border-radius: 10px;
+            margin-left:20px;
+        }
+    </style>
+
 </head>
 
-<style>
-    #maindiv
-    {
-        background-color: aliceblue;
-        width: 800px;
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .d1
-    {
-        width: 100px;
-        height: 120px;
-        margin-left: 10px;
-        margin-top: 10px;
-        background-color: lightseagreen; 
-    }
-</style>
 
 <body>
+
+    <div id="webdiv">
+        This is a webpage
+        <div style="height:100px;
+             background-color:white;" 
+             id="headerdiv">
+
+            <span style="font-size:30px; 
+                  color:dodgerblue;
+                  text-transform:uppercase;
+                  font-weight:bold;">
+                  I LOVE PROGRAMMING!</span>
+            <span></span>
+        </div>
+        <div id="bodydiv">
+            <div id="leftdiv"> 
+                left
+            </div>
+            <div id="rightdiv"> 
+                <div style="color:dodgerblue;
+                     font-size:20px;
+                     font-weight:bold;">
+                     I love MIS3033 </div>
+                <div style="width:480px;">
+                    <img src="b.svg"/>
+                </div>
+             </div>
+            
+        </div>
+        <div style="height:50px; 
+             background-color: aliceblue;
+             color:darkgrey;
+             border-radius:5px;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;"
+             id="footerdiv">
+            <span> Designed and Developed by Alleigh Lawrence for MIS 3033 Exam 2 </span>
+        </div>
+    </div>
+
+
 
     <div id="maindiv">
         <div class="d1">
