@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title> MIS 3033 October 18, 2023 Java Script 2</title>
+    <style>
+        #maindiv
+        {
+            background-color:lightcoral;
+            width:600px;
+            display:flex;
+            flex-direction:row;
+        }
+        .divstyle
+        {
+            width:300px;
+            height:400px;
+            background-color:lightblue;
+            border-style:solid;
+        }
+        .divstyle2
+        {
+            background-color:lightgreen;
+            border-style:dashed;
+            height:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="maindiv">
+        <div id="leftdiv" class="divstyle"> left </div>
+        <div id="rightdiv" class="divstyle"> 
+            <div id="updiv" class="divstyle2">up</div> 
+            <div id="downdiv" class="divstyle2">down</div> 
+        </div>
+        <script>
+            {
+                "use strict";
+                document.querySelector("#downdiv").innerHTML = "DOWNDIV";
+            }
+        </script>
+    </div>
+</body>
+
+</html>
