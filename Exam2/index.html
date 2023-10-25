@@ -1,17 +1,170 @@
 <html>
 <head>
-    <title> [Exam Code] Alleigh Lawrence Exam 2 MIS 3033 </title>
+    <title> [PIHE] Alleigh Lawrence Exam 2 MIS 3033 </title>
+
+    <style>
+        .borders
+        {
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgrey;
+            border-radius:5px;
+        }
+        .titles
+        {
+            text-transform:uppercase;
+            background-color:lightskyblue;
+            border-radius:5px;
+        }
+        #maindiv
+        {
+            width:800px;
+            margin:auto
+        }
+        #headerdiv
+        {
+            display:flex;
+            flex-direction:row;
+        }
+        #namediv
+        {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            width:200px;
+            height:70px;
+        }
+        #codediv 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 70px;
+        }
+        #bodydiv1{
+            width:800px;
+            height:80px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+        }
+        #headimg{
+            height:60px;
+            border-radius:50%;
+        }
+        #bodydiv2
+        {
+            display:flex;
+            flex-direction:row;
+        }
+        #leftdiv
+        {
+            width:510px;
+            display:flex;
+            flex-direction:column
+        }
+        #updiv
+        {
+            height:110px;
+        }
+        #downdiv
+        {
+            height:160px;
+        }
+        #imgdiv
+        {
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            margin-top:20px;
+        }
+        #rightdiv
+        {
+            width:280px;
+        }
+
+        #footerdiv
+        {
+            height:60px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:flex-end;
+        }
+    </style>
 </head>
 <body>
 
-    <img src="static/head1-1.png" style="height:100px;"/>
-    <img src="static/head2-1.png" style="height:100px;"/>
-    <img src="static/html.svg" style="height:100px;"/>
-    <img src="static/linkedin-1.png" style="height:100px;"/>
-    <img src="static/css.svg" style="height:100px;"/>
-    <img src="static/javascript.svg" style="height:100px;"/>
-    <img src="static/logo.svg" style="height:100px;"/>
-    <img src="static/sqlite.svg" style="height:100px;"/>
+    <div id="maindiv">
+        <div id="headerdiv">
+            <div  class="borders" id="namediv">
+                <div>MIS 3033 Exam 2</div>
+                <div>Alleigh Lawrence</div>
+            </div>
+            <div class="borders" id="codediv"> [PIHE] </div>
+        </div>
+
+        <div class="borders" id="bodydiv1">
+            <div style="margin-left:10px;">
+            <img id="headimg" src="static/head2-1.png"/>
+            </div>
+            <div style="display:flex;flex-direction:column;margin-left:10px;">
+                <span> Alleigh Lawrence </span>
+                <span> MIS Student</span>
+            </div>
+            <div style="margin-left:30px;">
+                <a href="https://www.linkedin.com/">
+                <img src="static/linkedin-1.png" style="width:30px;" />
+                </a>
+            </div>
+        </div>
+
+        <div id="bodydiv2">
+            <div id="leftdiv">
+                <div class="borders" id="updiv">
+                    <span class="titles">About Me:</span>
+                    <div>I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development and Web API development.</div>
+                </div>
+                <div class="borders" id="downdiv">
+                    <span class="titles">Achievements</span>
+                    <div id="imgdiv">
+                        <div class="borders">
+                            <img src="static/html.svg" style="height:100px;" />
+                        </div>
+                        <div class="borders">
+                            <img src="static/css.svg" style="height:100px;" />
+                        </div>
+                        <div class="borders">
+                            <img src="static/javascript.svg" style="height:100px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="borders" id="rightdiv">
+                <span class="titles">Recent News:</span>
+                <ul>
+                    <li> Learned C#</li>
+                    <li> Learned Entity Framework</li>
+                    <li> Learned <img src="static/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="borders" id="footerdiv">
+            <div style="font-weight:bold;font-size:20px;color:grey;"> Developed by Alleigh Lawrence for MIS 3033 Exam 2</div>
+            <div style="margin-left:10px;"><img src="static/logo.svg" style="height:50px;" /></div>
+        </div>
+    </div>
+
+    
+    
+    
+
+
 
 </body>
 </html>
